@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Professional Resume Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-file-alt"></i>
+                <span>Resume Builder</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#contributing">Contributing</a></li>
+                <li><a href="https://github.com/yourusername/resume-builder" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Build Professional Resumes with Python</h1>
+                <p>A powerful command-line tool that generates professional resumes with comprehensive input validation and flexible customization options.</p>
+                <div class="hero-buttons">
+                    <a href="#installation" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/yourusername/resume-builder" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="code-title">resume.py</span>
+                    </div>
+                    <pre><code>python resume.py --automated
+# Generate sample resume
+
+python resume.py
+# Interactive resume creation</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Command Line Interface</h3>
+                    <p>Simple and intuitive command-line interface for quick resume generation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Input Validation</h3>
+                    <p>Comprehensive validation for emails, phone numbers, dates, and more using regex patterns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automated Mode</h3>
+                    <p>Generate sample resumes instantly with the --automated flag for testing and demonstrations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Multiple Entries</h3>
+                    <p>Add multiple education and work experience entries to create comprehensive resumes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Error Handling</h3>
+                    <p>Custom error messages and validation feedback to guide users through the process.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>Export Ready</h3>
+                    <p>Generate formatted plain-text resumes ready for export or further formatting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2>Installation</h2>
+            <div class="install-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Clone the Repository</h3>
+                        <pre><code>git clone https://github.com/yourusername/resume-builder.git
+cd resume-builder</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Requirements</h3>
+                        <p>No external dependencies required! Just Python 3.6+</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Run the Application</h3>
+                        <pre><code>python resume.py</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="usage" class="usage">
+        <div class="container">
+            <h2>Usage Examples</h2>
+            <div class="usage-examples">
+                <div class="example-card">
+                    <h3>Interactive Mode</h3>
+                    <p>Create a personalized resume step by step:</p>
+                    <pre><code>python resume.py
+
+# Follow the prompts to enter:
+# - Personal information
+# - Education details
+# - Work experience
+# - Skills</code></pre>
+                </div>
+                <div class="example-card">
+                    <h3>Automated Mode</h3>
+                    <p>Generate a sample resume instantly:</p>
+                    <pre><code>python resume.py --automated
+
+# Generates a sample resume with:
+# - John Doe's information
+# - Sample education and experience
+# - Common technical skills</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Preview Section -->
+    <section class="code-preview-section">
+        <div class="container">
+            <h2>Code Quality</h2>
+            <div class="code-highlights">
+                <div class="highlight-item">
+                    <h3>Clean Architecture</h3>
+                    <p>Well-structured Python classes with clear separation of concerns</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Input Validation</h3>
+                    <p>Comprehensive regex patterns for data integrity</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Error Handling</h3>
+                    <p>User-friendly error messages and validation feedback</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributing Section -->
+    <section id="contributing" class="contributing">
+        <div class="container">
+            <h2>Contributing</h2>
+            <p>We welcome contributions from the open-source community! Here's how you can help:</p>
+            <div class="contributing-grid">
+                <div class="contributing-card">
+                    <h3>Report Issues</h3>
+                    <p>Found a bug or have a feature request? Open an issue on GitHub.</p>
+                </div>
+                <div class="contributing-card">
+                    <h3>Submit Pull Requests</h3>
+                    <p>Have a fix or improvement? Submit a pull request with clear descriptions.</p>
+                </div>
+                <div class="contributing-card">
+                    <h3>Improve Documentation</h3>
+                    <p>Help improve README, add examples, or clarify usage instructions.</p>
+                </div>
+                <div class="contributing-card">
+                    <h3>Add Features</h3>
+                    <p>Implement new resume formats, export options, or validation rules.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Resume Builder</h3>
+                    <p>Professional resume generation made simple with Python.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://github.com/yourusername/resume-builder">GitHub</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>License</h3>
+                    <p>MIT License - Open source and free to use.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Resume Builder. Made with ❤️ for the open-source community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
